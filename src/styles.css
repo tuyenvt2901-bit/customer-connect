@@ -2,6 +2,37 @@
 @source "../src";
 @import "tw-animate-css";
 
+/* === KhachHang design tokens (Frosted Depth) === */
+@theme inline {
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-ice: var(--ice);
+  --color-ink: var(--ink);
+  --color-cold: var(--cold);
+  --color-warm: var(--warm);
+  --color-hot: var(--hot);
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --brand: oklch(0.555 0.177 264);
+  --brand-foreground: oklch(0.985 0.003 247);
+  --ice: oklch(0.953 0.018 250);
+  --ink: oklch(0.165 0.034 267);
+  --cold: oklch(0.555 0.029 257);
+  --warm: oklch(0.762 0.167 65);
+  --hot: oklch(0.637 0.237 27);
+}
+
+@utility app-gradient {
+  background:
+    radial-gradient(1200px 600px at 15% -10%, oklch(0.85 0.05 250) 0%, transparent 55%),
+    radial-gradient(1000px 700px at 100% 0%, oklch(0.86 0.05 290) 0%, transparent 50%),
+    radial-gradient(900px 900px at 50% 120%, oklch(0.88 0.04 230) 0%, transparent 55%),
+    linear-gradient(180deg, oklch(0.953 0.012 250) 0%, oklch(0.935 0.014 270) 100%);
+}
+
 @custom-variant dark (&:is(.dark *));
 
 /*
