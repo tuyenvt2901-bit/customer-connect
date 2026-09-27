@@ -679,7 +679,7 @@ function CustomerModal({
   setLevel: (v: Level) => void;
   onClose: () => void;
   onSubmit: (e: React.FormEvent) => void;
-  onDelete?: () => void;
+  onDelete: (() => void) | undefined;
 }) {
   return (
     <div className="fixed inset-0 z-40 flex items-end justify-center sm:items-center">
