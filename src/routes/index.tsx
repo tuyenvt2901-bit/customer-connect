@@ -311,7 +311,7 @@ function KhachHangApp() {
 
   return (
     <div className="app-gradient min-h-screen font-body text-ink antialiased">
-      <div className="mx-auto max-w-5xl px-4 py-6 sm:px-6 sm:py-10">
+      <div className="mx-auto max-w-5xl px-4 py-6 pb-28 sm:px-6 sm:py-10 sm:pb-10">
         {/* Header */}
         <header className="relative rounded-3xl border border-white/60 bg-white/40 p-5 shadow-[0_20px_60px_-30px_rgba(79,124,255,0.6)] backdrop-blur-xl sm:p-7">
           <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/90 to-transparent" />
