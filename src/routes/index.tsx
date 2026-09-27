@@ -221,10 +221,7 @@ function KhachHangApp() {
 
   // counts
   const counts = useMemo(() => {
-    const c = { all: customers.length, nong: 0, am: 0, lanh: 0 } as Record<
-      string,
-      number
-    >;
+    const c = { all: customers.length, nong: 0, am: 0, lanh: 0 };
     for (const cu of customers) c[cu.level] += 1;
     return c;
   }, [customers]);
